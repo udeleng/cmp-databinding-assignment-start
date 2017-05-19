@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  numbers = [];
+
+  onNumberIncremented(data: {value: number}) {
+    console.log("data: " + data.value);
+  }
+
 }
