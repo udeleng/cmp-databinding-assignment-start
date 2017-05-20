@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { EvenComponent } from './even/even.component';
+import { OddComponent } from './odd/odd.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +13,7 @@ export class AppComponent {
   numbers = [];
 
   onNumberIncremented(data: {value: number}) {
-    console.log("data: " + data.value);
+    this.numbers.push(data.value);
   }
 
 }

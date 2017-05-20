@@ -14,5 +14,12 @@
       </ol>
     </div>
     <app-game-control (numberIncremented)="onNumberIncremented($event)"></app-game-control>
+    <br><br>
+    <div class="container">
+        <div *ngFor="let value of numbers">
+          <app-even *ngIf="value % 2 == 0" [value]="value"></app-even>
+          <app-odd *ngIf="value % 2 != 0" [value]="value"></app-odd>
+        </div>
+    </div>
   </div>
 </div>
