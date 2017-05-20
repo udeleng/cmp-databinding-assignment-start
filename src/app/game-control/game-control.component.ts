@@ -33,6 +33,7 @@ export class GameControlComponent implements OnInit {
     if (this.intervalID > 0) {
       clearInterval(this.intervalID);
       this.intervalID = 0;
+      this.counter = 0;
       console.log("stopped");
     } else {
       console.log("game already stopped");
